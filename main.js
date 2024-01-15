@@ -1,59 +1,3 @@
-// js history
-
-/*
-*Tim Berners le >> world wep 
-*Mosic wep >> img >>1993
-*Netscape Broweser >>> bernerd eich >>> 1994 >>> dynamic
-*livescript >>1-self>>functionl programming 2-schem>>oop 3-java>>syntax
-*jscript >>microsoft ---- w3c >> tim Berners lee
-*/
- 
-// intro to js
-
-/*
-*intraction in js
-*integration with backend
-*validtion
-*/
-
-// window.alert('mahmoud')
-// document.getElementById("dd").innerHTML='mmmmmmmmmmmmmmmmmmmmmmmmmmm'
-
-// var x;
-// 1- & OR 5 OR A
-// 2- var var ;
-// 3- var na me;
-// var x = document.getElementById("dd").innerHTML='mmmmmmmmmmmmmmmmmmmmmmmmmmm';
-
-// *Data types:-
-// 
-/**
- * *Primtive
- * 1-num 
- * 2-boolen
- * 3-string
- * 4-undefind
- * 5-null 
- * >>>ec 5
- * 6-bignt
- * 7-symbol
- *  */ 
-
-// var x; >>declertion
-// console.log(typeof(x))
-// x='dssd'>>assign
-  /**
-   * *non Primtive
-   * 1-object 
-   */
-
-  /**
-   * *concotioion operators
-   * *prompt
-   * *conditional statments (switch)
-   */
-
-  ///*Write a program that determines whether a given number is positive or not.
 
 // *1-Write a program that allow to user enter number then printit
 // !Example
@@ -205,21 +149,18 @@
 // !Input: 4 3
 // !Output: 64
 // !Hint how to calculate 4^3 = 4 * 4 * 4 =64
-// var base = parseInt(window.prompt("Enter a number:"));
-// var exponent = parseInt(window.prompt("Enter a number:"));
-// var result =1;
-// switch (exponent) {
-//   case 0:
-//     result = 1;
-//     break;
-//   case 1:
-//     result = base;
-//     break;
-//   default:
-//     for (let i = 0; i < exponent; i++) {
-//       result *= base;
-//     }
-// }
+var base = parseFloat(window.prompt("Enter the base number:"));
+var exponent = parseInt(window.prompt("Enter the exponent (a non-negative integer):"));
+var result = 1;
+
+// Validate user input
+if (isNaN(base) || isNaN(exponent) || exponent < 0 || !Number.isInteger(exponent)) {
+  alert("Please enter valid numbers for base and exponent.");
+} else {
+  // Calculate power using exponentiation operator
+  result = base ** exponent;
+  alert("Result: " + result);
+}
 
 // console.log(result);
 // *12- Write a program to enter marks of five subjects and calculate total, average and
